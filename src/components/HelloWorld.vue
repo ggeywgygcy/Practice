@@ -1,9 +1,14 @@
 <template>
   <div  class="continer">
-    <!-- Navbar-->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid" >
-    <a class="navbar-brand" href="#">Полиция(сизо)</a>
+  <div class="container-fluid fixed-top" >
+    <a class="navbar-brand" href="#">
+      <div class="spinner-border text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,13 +41,16 @@
 </nav>
 <!---->
 
+<!-- Текст -->
  <div id="txt" class="row">
 <h1 >Сотрудник!Добро пожаловать на официальный сайт СИЗО 
-      города Котловск для Сотрудников! На этом сайте вы можеть посмотреть текущих преступников, а 
+      города Z для Сотрудников! На этом сайте вы можеть посмотреть текущих преступников, а 
 также вносить новых! Удачной работы!
 </h1>
 </div>
-<!-- Карусель-->
+<!---->
+
+<!-- Карусель -->
 <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -71,13 +79,36 @@
 </div>
 <!---->
 
+<!-- Новости -->
+<div class="rows">
+  <div class="card" style="width: 18rem;">
+  <img src="https://www.vokrug.tv/pic/product/8/1/f/0/81f08b7cf28b26b245b623355d3679b6.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Пойман особо опасный преступник</h5>
+    <p class="card-text">Его награда составляла 300 000 000 белли</p>
+  </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+  <img src="https://i.ytimg.com/vi/u9y4tkKy0wA/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGDMgVChyMA8=&rs=AOn4CLBGZPj1dhVwM_UHy2xgiAay10wgBQ" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Потом</h5>
+    <p class="card-text"></p>
+  </div>
+</div>
+</div>
+<!---->
+
+<!-- Алерт -->
 <div id="" class="alert alert-dark" role="alert">
   Не нарушайте закон! А то окажитесь <a href="https://37.fsin.gov.ru/uchrejdeniya/ispravitelnaya-koloniya-3.php?month=4&year=2022" class="alert-link">здесь</a>
 </div>
 
   </div>
 </template>
+<!---->
 
+<!--Самая сложная часть-->
 <script>
 export default {
   name: 'HelloWorld',
@@ -86,6 +117,8 @@ export default {
   }
 }
 </script>
+<!---->
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
@@ -97,9 +130,17 @@ export default {
 }
 
 .container-fluid{
-  height: 50px;
+  background-color: white;
+  height: 60px;
+  
 
 }
+
+#oi-satoru{
+  height: 45px;
+  width: 45px;
+}
+
 
 
 

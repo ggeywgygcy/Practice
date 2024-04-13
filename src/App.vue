@@ -5,11 +5,13 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Zakl from './components/Zakl.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Zakl
   }
 }
 </script>
