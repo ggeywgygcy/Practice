@@ -1,17 +1,20 @@
 <template>
-  
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="continer">
+  <HelloWorld/>
+  <router-view/>
+  <AddZakl/>
+</div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import Zakl from './components/Zakl.vue'
+import AddZakl from './components/AddZakl.vue';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    Zakl
+    AddZakl
   }
 }
 </script>

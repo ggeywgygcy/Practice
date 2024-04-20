@@ -18,7 +18,7 @@
           <a class="nav-link active" aria-current="page" href="#">Главная страница</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Заключенные</a>
+          <router-link class="nav-link" to="/AddZakl">Заключенные</router-link>  
         </li>
         <li class="nav-item dropdown">
           <ul class="dropdown-menu">
