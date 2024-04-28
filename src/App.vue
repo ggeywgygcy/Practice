@@ -1,20 +1,20 @@
 <template>
-<div class="continer">
-  <HelloWorld/>
+<div class="container">
+  <nav>
+    <Menu/>
+  </nav>
   <router-view/>
-  <AddZakl/>
 </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import AddZakl from './components/AddZakl.vue';
+import Menu from './components/Menu.vue'
+//import AddZakl from './components/AddZakl.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    AddZakl
+    Menu
   }
 }
 </script>
