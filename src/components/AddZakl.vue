@@ -16,7 +16,7 @@
       </div>
       <div class="mb-3">
         <label for="catStreet" class="form-label">Камера нахождения</label>
-        <input v-model = "staff.street" type="date" class="form-control" id="catJobDate">
+        <input v-model = "staff.street" type="text" class="form-control" id="catJobDate">
       </div>
       <button v-on:click="addJob" class="btn btn-primary">Сохранить</button>
       </div>
