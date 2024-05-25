@@ -1,5 +1,6 @@
-<template>
-  <div  class="continer">
+<template >
+  <body background="dnr.jpg">
+  <div id="suka" class="continer">
     <!-- Navbar -->
   
 <!---->
@@ -48,10 +49,17 @@
 
 <!-- Алерт -->
 <div id="" class="alert alert-dark" role="alert">
-  Не нарушайте закон! А то окажитесь <a href="https://37.fsin.gov.ru/uchrejdeniya/ispravitelnaya-koloniya-3.php?month=4&year=2022" class="alert-link">здесь</a>
+  Не нарушайте закон! А то окажитесь <a href="https://youtu.be/s1iBYOEnKhM" class="alert-link">здесь</a>
 </div>
 
+<div id="goandjo" class="continer">
+  <iframe class="cfrd" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4302.7829827313435!2d139.57547450408174!3d35.631314635938175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f119940d68eb%3A0xcc936e0a68fdc823!2z0JrQvtC80LDRjQ!5e1!3m2!1sru!2sru!4v1716643081847!5m2!1sru!2sru" width="1066" height="1066" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
   </div>
+</body>
+
 </template>
 <!---->
 
@@ -69,6 +77,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+body{
+  background-color: chocolate;
+}
+
+
+#goandjo{
+  background-color: rosybrown;
+}
 
 #txt{
    background-color: azure;
