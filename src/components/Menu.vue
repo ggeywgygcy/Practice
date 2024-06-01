@@ -25,6 +25,9 @@
           <li class="nav-item active">
             <router-link class="nav-link" to="/CardZakl">Список заключенных</router-link>  
           </li>
+          <li class="nav-item active">
+            <router-link class="nav-link" to="/Instruction">Инструкции</router-link>  
+          </li>
           <li class="nav-item dropdown">
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>

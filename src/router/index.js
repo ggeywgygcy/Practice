@@ -3,6 +3,7 @@ import AddZakl from '@/components/AddZakl.vue'
 import HelloWorld from '@/components/HelloWorld.vue'
 import News from '@/components/News.vue'
 import CardZakl from '@/components/CardZakl.vue'
+import Instruction from '@/components/Instruction.vue'
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
       path: '/CardZakl',
       name: 'CardZakl',
       component: CardZakl
+    },
+    {
+      path: '/Instruction',
+      name: 'Instruction',
+      component: Instruction
     }
 
 ]
@@ -34,3 +40,4 @@ const router = createRouter({
   })
   
   export default router
+  

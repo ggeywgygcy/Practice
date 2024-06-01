@@ -4,7 +4,7 @@
       <div>
           <div class="mb-3">
           <label for="CatName" class="form-label">Ф.И.О</label>
-          <input v-model="staff.nickname" type="text" class="form-control" id="CatName" aria-describedby="emailHelp">
+          <input v-model="staff.name" type="text" class="form-control" id="CatName" aria-describedby="emailHelp">
       </div>
       <div class="mb-3">
         <label for="catAge" class="form-label">Возраст</label>
