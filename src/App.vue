@@ -9,7 +9,7 @@
 
 <script>
 import Menu from './components/Menu.vue'
-//import AddZakl from './components/AddZakl.vue';
+
 
 export default {
   name: 'App',

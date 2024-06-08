@@ -1,9 +1,10 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import AddZakl from '@/components/AddZakl.vue'
 import HelloWorld from '@/components/HelloWorld.vue'
-import News from '@/components/News.vue'
 import CardZakl from '@/components/CardZakl.vue'
+import News from '@/components/News.vue'
 import Instruction from '@/components/Instruction.vue'
+import ListStaff from '@/views/ListStaff.vue'
 
 const routes = [
     {
@@ -22,16 +23,20 @@ const routes = [
       component: News
     },
     {
-      path: '/CardZakl',
+      path: '/ListStaff',
       name: 'CardZakl',
       component: CardZakl
+    },
+    {
+      path: '/CardZakl',
+      name: 'ListStaff',
+      component: ListStaff
     },
     {
       path: '/Instruction',
       name: 'Instruction',
       component: Instruction
     }
-
 ]
 
 const router = createRouter({

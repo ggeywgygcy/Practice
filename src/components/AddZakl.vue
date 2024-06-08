@@ -1,12 +1,10 @@
 <template>
   <div class="rows">
   <h1> Прием заключенного </h1>
-      <div>
-          <div class="mb-3">
-          <label for="CatName" class="form-label">Ф.И.О</label>
-          <input v-model="staff.name" type="text" class="form-control" id="CatName" aria-describedby="emailHelp">
-      </div>
       <div class="mb-3">
+        <div class="mb-3">
+          <label for="CatName" class="form-label">Ф.И.О</label>
+          <input v-model="staff.iname" type="text" class="form-control" id="CatName">
         <label for="catAge" class="form-label">Возраст</label>
         <input v-model="staff.age" type="text" class="form-control" id="catAge">
       </div>
@@ -41,7 +39,17 @@ export default {
        staff: Zakl
     }
   
-}
+},
+methods:{
+    addJob(){
+        this.$store.commit('addWorker', {...this.staff})
+        //console.log({...this.staff})
+        this.staff = new Zakl()
+    }
+  },
+  mounted(){
+    this.staff.id = new Date().getTime();
+  }
 }
 </script>
 
